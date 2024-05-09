@@ -1,0 +1,738 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+/* ID */
+#inicio {
+    color: black;
+}
+
+#mujer {
+    color: black;
+}
+
+#hombre {
+    color: black;
+}
+
+#niños {
+    color: black;
+}
+
+#contactanos {
+    color: black;
+}
+
+
+
+/* HEADER SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(46, 155, 153, 0.455);
+    height: 90px;
+    width: 100%;
+}
+
+.hero-section {
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+    width: 100%;
+}
+
+.hero-section p {
+    padding-left: 12px;
+    font-size: 30px;
+    color: rgb(213, 43, 43);
+}
+
+.hero img {
+    height: 50px;
+    width: 50px;
+    border-radius: 300px;
+    object-fit: cover;
+
+}
+
+.hero-ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+    gap: 10px;
+    align-items: flex-end;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero-ul a {
+    text-decoration: none;
+    color: rgb(218, 50, 50);
+}
+
+
+/*          */
+
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+}
+
+
+.main-content {
+    object-fit: cover;
+    width: 100%;
+}
+
+.main-content h1 p {
+    display: flex;
+    align-content: center;
+    gap: 50px;
+    object-fit: cover;
+
+
+}
+
+.main-content h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    color: red;
+    padding-top: 20px;
+}
+
+.main-content p {
+    display: flex;
+    padding: 20px;
+    font-size: 28px;
+    text-align: center;
+    color: blue;
+}
+
+
+/* BUSCADO */
+.searchBox {
+    display: flex;
+    max-width: 230px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: #2f3640;
+    border-radius: 50px;
+    position: relative;
+}
+
+.searchButton {
+    color: white;
+    position: absolute;
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--gradient-2, linear-gradient(90deg, #2AF598 0%, #009EFD 100%));
+    border: 0;
+    display: inline-block;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+/*hover effect*/
+button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+    transform: translateY(-3px);
+}
+
+/*button pressing effect*/
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.searchInput {
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    padding: 24px 46px 24px 26px;
+}
+
+/*  SECCION LISTADO Y ADIDAS       */
+
+/* listado */
+.container-listado {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.container-left {
+    width: max-content;
+}
+
+.listado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    gap: 50px;
+    background-color: rgba(0, 0, 0, 0.224);
+    width: 100%;
+}
+
+.listado a {
+
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(17, 8, 141);
+}
+
+
+/* adidas */
+
+
+.adidas {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.adidas h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.adidas-img {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    width: auto;
+}
+
+.adidas1 {
+    width: 45%;
+
+}
+
+.adidas2 {
+    width: 45%;
+}
+
+.adidas h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    color: rgb(170, 5, 5);
+    padding-right: 190px;
+    padding-bottom: 50px;
+}
+
+/*    */
+/* ADIDAS MUJER */
+
+.adidasm {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.adidasm h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    color: rgb(170, 5, 5);
+    padding-right: 190px;
+}
+
+.adidasm p {
+    color: rgba(164, 61, 61, 0.944);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+.adidasm-img {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    position: relative;
+    right: 40px;
+}
+
+/* ADIDAS HOMBRE */
+.hombre {
+    gap: 3%;
+}
+
+.adidash {
+    display: flex;
+    flex-direction: column;
+    width: 82%;
+    /* background-color: #2af59a19; */
+}
+
+.adidash h3 {
+    text-align: center;
+    color: red;
+    font-size: 80px;
+}
+
+.adidash p {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(206, 69, 39);
+}
+
+/*  */
+
+/* NIKE */
+
+.nike {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nike h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    color: rgb(170, 5, 5);
+}
+
+.nike-img {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: auto;
+}
+
+
+.nike1 {
+    width: 30%;
+
+
+}
+
+.nike3 {
+
+    width: 30%;
+}
+
+/*  */
+
+/* NIKE MUJER */
+
+.nikem {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(48, 42, 42);
+    width: 620px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 500px;
+
+
+}
+
+.nikem-content {
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.nikem h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(240, 183, 183);
+    width: 100%;
+}
+
+.nikem-content p {
+    text-align: center;
+}
+
+.nikem-content a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid white;
+    padding: 5px;
+    background-color: white;
+}
+
+.nikem img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*  */
+
+/* NIKE HOMBRE */
+
+.nikeh {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+
+}
+
+
+
+.nikeh h3 {
+    text-align: center;
+    color: red;
+    font-size: 80px;
+}
+
+.nikeh p {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(206, 69, 39);
+}
+/*     */
+/* NIKE NIÑO */
+.niken{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.niken h3{
+    text-align: center;
+    color: red;
+    font-size: 80px;
+}
+
+.niken-img{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* PUMA */
+
+
+
+.puma {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.puma h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    color: rgb(170, 5, 5);
+}
+
+.puma-img {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: auto;
+}
+
+
+.puma1 {
+    width: 35%;
+
+
+}
+
+.puma2 {
+
+    width: 35%;
+}
+
+/*        */
+/* PUMA MUJER */
+
+.pumam {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pumam h3 {
+    text-align: center;
+    font-size: 80px;
+    padding-top: 30px;
+    color: rgb(170, 5, 5);
+}
+
+.pumam p {
+
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.228);
+    text-align: center;
+}
+
+.pumam-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-color: black;
+}
+
+/*  */
+/* PUMA HOMBRE */
+
+.pumah {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.pumah h3 {
+    text-align: center;
+    color: red;
+    font-size: 80px;
+}
+
+.pumah p {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(206, 69, 39);
+}
+/*      */
+/* PUMA NIÑO */
+.puman{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 30px;
+
+
+}
+.puman h3{
+    text-align: center;
+    color: red;
+    font-size: 80px;
+}
+.puman-img{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+/*    */
+.encontranos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    width: 100%;
+}
+
+
+.encontranos h4 {
+    color: red;
+    font-size: 70px;
+    text-align: center;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/* SECCION CONTACTO */
+
+.contacto {
+    height: max-content;
+    width: 100%;
+    gap: 130px;
+}
+.contacto-container{
+    width: max-content;
+}
+
+.contacto2 {
+    height: max-content;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(37, 150, 160, 0.207);
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+
+.field {
+    margin: 20px;
+    width: 400px;
+    height: 75px;
+    font-size: 28px;
+    border-radius: 4px;
+    padding: 20px;
+    border-color: aqua;
+}
+
+.button {
+    /* padding: 10px; */
+    height: 40px;
+    width: 200px;
+    font-size: 15px;
+    background-color: #e8e6e6
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+
+/* MAIN */
+main {
+    background-image: url(../Images/bfbdc3594a00c17d40043cf2b93e7a93.jpg);
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+
+@media (max-width: 360px) {
+
+    .container-listado {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-left {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .searchBox {
+        width: 100%;
+    }
+
+    .encontranos {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .encontranos h4 {
+        font-size: 28px;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .mapa {
+        width: 100%;
+    }
+
+    /* adidas */
+    .adidas h3 {
+        padding-right: 0%;
+    }
+
+    .adidasm h3 {
+        padding-right: 0%;
+    }
+
+    .adidas1 {
+        width: 50%;
+    }
+    .adidas2{
+        width: 50%;
+    }
+
+    /*  */
+
+    /* nike */
+    .nikem {
+        width: 340px;
+        position: sticky;
+    }
+
+    /*  */
+
+    /* puma */
+    .pumam3 {
+        width: 100%;
+    }
+
+    .pumam p {
+        font-size: 25px;
+    }
+
+    /*  */
+
+    /* CONTACTO */
+    .contacto {
+        flex-direction: column;
+        gap: 400px;
+    }
+
+    .field {
+        width: 100%;
+        margin: 0%;
+    }
+
+    .contact {
+        position: relative;
+        width: 100%;
+        height: max-content;
+        left: 0;
+        bottom: 180px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
