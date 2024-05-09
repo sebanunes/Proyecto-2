@@ -592,6 +592,12 @@ button:active {
     border-radius: 6px;
 }
 
+textarea{
+    resize: none;
+    width: 45%;
+    border-radius: 6px;
+    border-color: aqua;
+}
 
 .field {
     margin: 20px;
